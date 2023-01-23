@@ -1,0 +1,31 @@
+.alert {
+    margin: 5px;
+    position: relative;
+    height: 50%;
+}
+
+.alert-success {
+    background-color: #69F0AE;
+}
+
+.alert-warning {
+    background-color: #FDD835;
+}
+
+.alert-failure {
+    background-color: #F44336;
+}
+
+.alert-info {
+    background-color: #BBDEFB;
+}
+
+.alert-close-button {
+    position: absolute;
+    right: 0px;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Light.ttf);
+}
