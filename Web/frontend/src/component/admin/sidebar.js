@@ -23,9 +23,9 @@ function Sidebar() {
 
     return(
       <div >
-            <div class="">
+            <div className="">
                 <aside>
-                    <div class="sidebar">
+                    <div className="sidebar">
                     <Link to='/dashbord' >
                         <h3>Dashbord</h3>
                     </Link>

@@ -7,6 +7,7 @@ import Scolltotop from "../component/com-home/ScollToTop";
 import Footers from "../component/com-home/footer";
 
 function home() {
+  //console.log("test");
   return (
     <div>
       <Navbar></Navbar>

@@ -13,20 +13,20 @@ function Navbar(){
     if(!token) {
         return(
             <header id="header" >
-            <a class="navlogo"> Logo </a>
-            <nav class="navbar" >
+            <a className="navlogo"> Logo </a>
+            <nav className="navbar" >
                     <ul>
                         <li>
-                            <Link to="/" class="">Home</Link>
+                            <Link to="/" >Home</Link>
                         </li>
                         <li >
-                            <Link to="/About" class="">About</Link>
+                            <Link to="/About" >About</Link>
                         </li>
                         <li >
                             <Link  class="createbtn " to="/EaProduct" >EA PRODUCT</Link>
                         </li>
                         <li>
-                            <Link to="/Signin" class="">SIGN IN </Link> 
+                            <Link to="/Signin" >SIGN IN </Link> 
                         </li>
                         
                     </ul>
@@ -40,8 +40,8 @@ function Navbar(){
         if(str2=="admin"){
             return (
                 <header id="header" >
-                <a class="navlogo"> Logo </a>
-                <nav class="navbar" >
+                <a className="navlogo"> Logo </a>
+                <nav className="navbar" >
                         <ul>
                             {/* <li>
                                 <Link to="/Summary" class="">Summary</Link>
@@ -58,17 +58,17 @@ function Navbar(){
         else{
             return (
                 <header id="header" >
-                <a class="navlogo"> Logo </a>
-                <nav class="navbar" >
+                <a className="navlogo"> Logo </a>
+                <nav className="navbar" >
                         <ul>
                             <li>
-                                <Link to="/" class="">Home</Link>
+                                <Link to="/" >Home</Link>
                             </li>
                             <li >
-                                <Link to="/About" class="">About</Link>
+                                <Link to="/About" >About</Link>
                             </li>
                             <li >
-                                <Link  class="createbtn " to="/EaProduct" >EA PRODUCT</Link>
+                                <Link  className="createbtn " to="/EaProduct" >EA PRODUCT</Link>
                             </li>
                             <li>
                                 <Link onClick={logout}> Logout</Link>

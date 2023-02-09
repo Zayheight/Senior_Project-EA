@@ -124,13 +124,14 @@ main .recent-orders h2 {
 
 main .recent-orders table {
   background: var(--color-white);
-  width: 90%;
+  width: 100%;
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
   text-align: left;
   box-shadow: var(--box-shadow);
   transition: all 300ms ease;
 }
+
 
 main .recent-orders table:hover {
   box-shadow: none;

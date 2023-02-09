@@ -26,6 +26,24 @@ app.get("/user", (req, res) => {
   });
 });
 
+app.get("/transaction", (req, res) => {
+  db.query(`SELECT user.user_id,user.user_name,transaction.port_number
+  ,transaction.time,transaction.balance,
+  transaction.profit
+  FROM user
+  JOIN port
+  ON user.user_id = port.user_id
+  JOIN TRANSACTION
+  ON TRANSACTION.port_number= port.port_number`, (err, result) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.send(result);
+    }
+  });
+});
+
+
 async function getDataMT4(){
   var count=0;
   const sock = zmq.socket("pull");
